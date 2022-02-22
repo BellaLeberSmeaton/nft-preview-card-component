@@ -1,6 +1,10 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: hsl(217, 54%, 11%);
+  max-width: 375px;
+  display: block;
+  margin: 10% auto;
+  min-height: 100vh;
 }
 
 .nft {
@@ -10,12 +14,50 @@ body {
 }
 
 .--img {
+  width: 100%;
+  position: relative;
+  height: 335px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__img-bottom {
+  z-index: 0;
+  position: absolute;
+  max-width: 335px;
   border-radius: 10px;
+}
+
+.__img-top {
+  display: none;
+  position: absolute;
+}
+
+.--img:hover .__img-top {
+  /* display: inline;
+  object-fit: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: hsl(178, 100%, 50%, 0.3);
+  cursor: pointer;
 }
 
 .--title {
   color: hsl(0, 0%, 100%);
   font-weight: 600;
+}
+
+.--title:hover,
+strong:hover,
+footer a:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 p,
@@ -24,6 +66,10 @@ p,
   color: hsl(215, 51%, 70%);
   font-size: 18px;
   font-weight: 300;
+}
+
+.--description {
+  margin: 0;
 }
 
 .--info {
@@ -36,12 +82,17 @@ p,
   font-weight: 400;
 }
 
+.__price img,
+.__time img {
+  padding-right: 5px;
+}
+
 .--creator {
-  border-top: 1px solid hsl(0, 0%, 100%);
+  border-top: 1px solid hsl(215, 32%, 27%);
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .__avatar {
@@ -62,6 +113,10 @@ strong {
 footer {
   text-align: center;
   font-size: small;
-  margin-top: auto;
+  margin-top: 20%;
+  color: hsl(0, 0%, 100%);
+}
+
+footer a {
   color: hsl(0, 0%, 100%);
 }
