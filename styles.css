@@ -31,19 +31,16 @@ body {
 
 .__img-top {
   display: none;
-  position: absolute;
 }
 
 .--img:hover .__img-top {
-  /* display: inline;
-  object-fit: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  z-index: 1;
   background-color: hsl(178, 100%, 50%, 0.3);
   cursor: pointer;
 }
