@@ -40,7 +40,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
 
 ### What I learned
 
@@ -81,10 +80,6 @@ I'm proud of the hover states:
   cursor: pointer;
 }
 ```
-
-### Continued development
-
-I definitely want to learn more about media queries to better understand breakpoints and how I can apply them to all the devices.
 
 ### Useful resources
 
